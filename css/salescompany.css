@@ -221,6 +221,75 @@ input{
 .floor-label a:hover{
     color: #ff0000;
 }
+.wheeltop{
+    position: absolute;
+    top: 42px;
+    left: 920px;
+    background: #00753B;
+    width: 282px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.wheel-cont{
+    position: absolute;
+    top: 92px;
+    left: 920px;
+    width: 282px;
+    height: 412px;
+    background: #eeeeee;
+    overflow: hidden;
+    cursor: pointer;
+}
+.wheel-box{
+    width: 300%;
+    height: 100%;
+    /* margin-left: -100px; */
+}
+.wheellists{
+    width: 282px;
+    height: 100%;
+    float: left;
+}
+.wheeltitle{
+    color: #333333;
+    font-size: 14px;
+    padding-left: 5px;
+    line-height: 40px;
+}
+.wheel-cont img{
+    display: block;
+    margin-left: 5px;
+    width: 272px;
+}
+.wheel-neirong{
+    padding-top: 10px;
+    color: #666666;
+    font-size: 14px;
+    padding-left: 5px;
+    line-height: 20px;
+}
+.wheel-cont .wheelbtns{
+    width: 45px;
+    height: 10px;
+    position: absolute;
+    top: 372px;
+    left: 228px;
+    /* background: #000; */
+    z-index: 1;
+    border: none;
+}
+.wheel-cont .wheelbtns li{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    float: left;
+    background: #999999;
+}
+
 .floor-label ul{
     position: absolute;
     left: 0;

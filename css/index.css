@@ -173,26 +173,33 @@ input{
     font-size: 14px;
     line-height: 14px;
     padding: 5px 15px;
+    position: relative;
+    overflow: hidden;
 }
 .function ul .function-content:hover{
+    overflow: visible;
     background-color: #015429;
     color: #fff;
 }
+.function ul .function-content:hover span{
+    color: #fff !important;
+}
 .function-content-hidden{
     position: absolute;
-    top: 44px;
-    right: 264px;
+    top: 24px;
+    left: 0;
     width: 180px;
     height: auto;
     background: #015429;
-    display: none;
+    /* display: none; */
+    z-index: 1;
 }
 .function-content-hidden ul{
     padding: 2px 0;
 }
 .function-content-hidden ul li{
     width: 100%;
-    padding-left: 12px;
+    /* padding-left: 12px; */
     height: 36px;
     line-height: 36px;
     color: #fff;
@@ -206,6 +213,39 @@ input{
 .banner{
     width: 100%;
     height: 582px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.imglist{
+    width: 300%;
+    height: 100%;
+    /* margin-left: 100%; */
+}
+.imglist div{
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+.btnslist{
+    width: 90px;
+    height: 20px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    /* background: #000; */
+    z-index: 1;
+}
+.btnslist li{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    float: left;
+    z-index: 1;
+    cursor: pointer;
 }
 /* 栏目 */
 .item-box{
@@ -310,19 +350,65 @@ input{
     height: 415px;
     background: #ffffff;
     box-shadow:0px 2px 8px 0px rgba(0,0,0,0.09);
-
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
 }
-.case-item1-cont img{
+.item1btnslist{
+    width: 45px;
+    height: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    /* background: #000; */
+    z-index: 1;
+}
+.item1btnslist li{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    float: left;
+    background: #ccc;
+}
+.case-item1-box{
+    width: 300%;
+    height: 100%;
+}
+.case-item1-img{
     width: 528px;
-    height: 376px;
-    display: block;
     float: left;
+    height: 100%;
 }
-/* .case-item1-font{
-    width: 260px;
-    height: 400px;
+.case-item1-img img{
+    width: 100%;
+}
+.case-item1-jieshao{
+    width: 264px;
     float: left;
-} */
+    height: 100%;
+    /* background: #000; */
+}
+.case-jieshao-title{
+    margin: 60px 5px 15px 5px;
+    font-size: 16px;
+    color: #333333;
+    line-height: 20px;
+}
+.case-jieshao-link{
+    width: 50px;
+    height: 1px;
+    background: #cccccc;
+    margin-left: 5px;
+    transition: width 1s ease;
+}
+.case-jieshao-neirong{
+    margin-top: 15px;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+}
 .case-item2{
     width: 380px;
     height: 488px;
@@ -336,13 +422,63 @@ input{
     height: 415px;
     background: #ffffff;
     box-shadow:0px 2px 8px 0px rgba(0,0,0,0.09);
-
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
 }
-.case-item2-cont img{
-    width: 383px;
-    height: 240px;
-    display: block;
+.item2btnslist{
+    width: 45px;
+    height: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    /* background: #000; */
+    z-index: 1;
+}
+.item2btnslist li{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
     float: left;
+    background: #ccc;
+}
+.case-item2-box{
+    width: 300%;
+    height: 100%;
+}
+.item2-lists{
+    width: 383px;
+    height: 100%;
+    float: left;
+}
+.item2-lists img{
+    width: 100%;
+    height: 230px;
+}
+.case-item2-data{
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 14px;
+    padding: 10px;
+}
+.case-item2-title{
+    font-size: 16px;
+    color: #666666;
+    line-height: 16px;
+    padding: 0 10px;
+}
+.case-item2-neirong{
+    font-size: 14px;
+    color: #999999;
+    padding: 15px 10px 0 10px;
+    line-height: 20px;
+}
+.item2-lists img{
+    transition:all 1s ease-out;
+}
+.item2-lists img:hover{
+    transform: scale(0.8);
 }
 /* 底部 */
 .bottom-copyright{
